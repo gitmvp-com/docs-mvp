@@ -1,0 +1,9 @@
+build:
+    title: Documentation MVP
+    input-folder: src
+    output-folder: build
+    related-title: See Also
+publish:
+    url: http://localhost:5000/
+    root_path: docs
+    skip_edit_links: True
