@@ -1,0 +1,241 @@
+/* Documentation MVP Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 280px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    overflow-y: auto;
+    position: fixed;
+    height: 100vh;
+}
+
+.logo h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #34495e;
+}
+
+.navigation {
+    margin-top: 10px;
+}
+
+.nav-section {
+    margin-bottom: 15px;
+}
+
+.nav-link {
+    display: block;
+    color: #bdc3c7;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    background-color: #34495e;
+    color: #fff;
+}
+
+.nav-link.active {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: 600;
+}
+
+.nav-children,
+.nav-grandchildren {
+    list-style: none;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.nav-children .nav-link,
+.nav-grandchildren .nav-link {
+    font-size: 13px;
+    padding: 6px 10px;
+}
+
+.nav-grandchildren {
+    margin-left: 10px;
+}
+
+/* Content */
+.content {
+    flex: 1;
+    margin-left: 280px;
+    padding: 40px 60px;
+    background-color: #fff;
+    max-width: 1200px;
+}
+
+/* Markdown Content */
+.markdown-content {
+    max-width: 800px;
+}
+
+.markdown-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.markdown-content h2 {
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 8px;
+}
+
+.markdown-content h3 {
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    color: #34495e;
+}
+
+.markdown-content h4 {
+    font-size: 1.25em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+.markdown-content p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+.markdown-content li {
+    margin-bottom: 8px;
+}
+
+.markdown-content code {
+    background-color: #f4f4f4;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+    color: #e74c3c;
+}
+
+.markdown-content pre {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.markdown-content pre code {
+    background-color: transparent;
+    padding: 0;
+    color: #ecf0f1;
+}
+
+.markdown-content blockquote {
+    border-left: 4px solid #3498db;
+    padding-left: 20px;
+    margin: 20px 0;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+.markdown-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.markdown-content table th,
+.markdown-content table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.markdown-content table th {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: 600;
+}
+
+.markdown-content table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.markdown-content a {
+    color: #3498db;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.markdown-content a:hover {
+    border-bottom-color: #3498db;
+}
+
+.markdown-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.markdown-content hr {
+    border: none;
+    border-top: 2px solid #ecf0f1;
+    margin: 30px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+    
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+}
