@@ -1,0 +1,16 @@
+# Getting started
+- href: src/getting-started.md
+- topics:
+    - href: src/installation.md
+    - href: src/configuration.md
+
+# Building apps
+- href: src/building-apps/intro.md
+- topics:
+    - href: src/building-apps/ui.md
+    - href: src/building-apps/data.md
+
+# Reference
+- href: src/reference/intro.md
+- topics:
+    - href: src/reference/markdown-syntax.md
